@@ -31,7 +31,10 @@ function App() {
       <Navbar />
 
       {/* Home */}
-      <main className="max-w-7xl mx-auto lg:my-14 grid md:grid-flow-col gap-4">
+      <main
+        className="max-w-7xl mx-auto lg:my-14 grid md:grid-flow-col gap-4"
+        id="home"
+      >
         <article className="md:grid-col-span-2 p-4">
           <p className="text-white font-bold text-[40px] ">Hi! Im </p>
           <p className="text-white font-extrabold text-[40px]">
@@ -68,7 +71,10 @@ function App() {
       </main>
 
       {/* Services */}
-      <section className="max-w-7xl mx-auto md:grid-col-span-2 px-4">
+      <section
+        className="max-w-7xl mx-auto md:grid-col-span-2 px-4"
+        id="services"
+      >
         <h1 className="font-bold text-sm text-text-secondary">MY SERVICES</h1>
         <p className="font-bold text-2xl text-white py-2 lg:py-4">WHAT I DO</p>
       </section>
@@ -82,7 +88,10 @@ function App() {
       </main>
 
       {/* Project */}
-      <section className="max-w-7xl mx-auto md:grid-col-span-2 px-4 text-center pt-6">
+      <section
+        className="max-w-7xl mx-auto md:grid-col-span-2 px-4 text-center pt-6"
+        id="projects"
+      >
         <h1 className="font-bold text-sm text-text-secondary">MY PROJECTS</h1>
         <p className="font-bold text-2xl text-white py-2 lg:py-4">
           Recent Works
@@ -117,7 +126,10 @@ function App() {
       </main>
 
       {/* Contact */}
-      <section className="max-w-7xl mx-auto md:grid-col-span-2 px-4 text-center pt-6">
+      <section
+        className="max-w-7xl mx-auto md:grid-col-span-2 px-4 text-center pt-6"
+        id="contact"
+      >
         <h1 className="font-bold text-sm text-text-secondary">CONTACT</h1>
         <p className="font-bold text-2xl text-white py-2 lg:py-4">
           Contact With Me

@@ -28,38 +28,68 @@ function Navbar() {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a className="text-base font-bold">HOME</a>
+              <a href="#home" className="text-base font-bold">
+                HOME
+              </a>
             </li>
             <li>
-              <a className="text-base font-bold">SERVICES</a>
+              <a href="#services" className="text-base font-bold">
+                SERVICES
+              </a>
             </li>
             <li>
-              <a className="text-base font-bold">PROJECTS</a>
+              <a href="#projects" className="text-base font-bold">
+                PROJECTS
+              </a>
             </li>
             <li>
-              <a className="text-base font-bold">CONTACT</a>
+              <a href="#contact" className="text-base font-bold">
+                CONTACT
+              </a>
             </li>
           </ul>
         </div>
-        <img
-          src={Logo}
-          alt="logo"
-          className="btn btn-ghost normal-case text-xl"
-        />
+        <a href="#home">
+          <img
+            src={Logo}
+            alt="logo"
+            className="btn btn-ghost normal-case text-xl"
+          />
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a className="text-base font-bold text-white">HOME</a>
+            <a
+              href="#home"
+              className="text-base font-bold text-white hover:bg-transparent"
+            >
+              HOME
+            </a>
           </li>
           <li>
-            <a className="text-base font-bold text-white">SERVICES</a>
+            <a
+              href="#services"
+              className="text-base font-bold text-white hover:bg-transparent"
+            >
+              SERVICES
+            </a>
           </li>
           <li>
-            <a className="text-base font-bold text-white">PROJECTS</a>
+            <a
+              href="#projects"
+              className="text-base font-bold text-white hover:bg-transparent"
+            >
+              PROJECTS
+            </a>
           </li>
           <li>
-            <a className="text-base font-bold text-white">CONTACT</a>
+            <a
+              href="#contact"
+              className="text-base font-bold text-white hover:bg-transparent"
+            >
+              CONTACT
+            </a>
           </li>
         </ul>
       </div>

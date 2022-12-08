@@ -43,7 +43,7 @@ function InputSubject() {
 function TextArea() {
   return (
     <textarea
-      className="textarea bg-bg-input w-full h-[188px] rounded resize-none text-white"
+      className="textarea bg-bg-input w-full h-[140px] rounded resize-none text-white"
       placeholder="Type Your Messages"
     ></textarea>
   );
