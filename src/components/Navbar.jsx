@@ -94,7 +94,13 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <Buttons />
+        <a
+          href="../files/CV_ABDUL_RAHMAN_ALHAFIZH.pdf"
+          target="_blank"
+          download
+        >
+          <Buttons />
+        </a>
       </div>
     </div>
   );

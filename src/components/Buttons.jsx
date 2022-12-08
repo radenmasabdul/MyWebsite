@@ -1,4 +1,5 @@
 import React from "react";
+
 import Logo_fb from "../assets/logo_fb.svg";
 import Logo_ig from "../assets/logo_ig.svg";
 import Logo_github from "../assets/logo_github.svg";
@@ -26,49 +27,61 @@ function ButtonsSendMessages() {
 
 function ButtonFb() {
   return (
-    <button className="">
-      <img src={Logo_fb} />
-    </button>
+    <a href="https://www.facebook.com/bangrastakece" target="_blank">
+      <button className="">
+        <img src={Logo_fb} />
+      </button>
+    </a>
   );
 }
 
 function ButtonIg() {
   return (
-    <button className="">
-      <img src={Logo_ig} />
-    </button>
+    <a href="https://www.instagram.com/radenmasabdul" target="_blank">
+      <button className="">
+        <img src={Logo_ig} />
+      </button>
+    </a>
   );
 }
 
 function ButtonGithub() {
   return (
-    <button className="">
-      <img src={Logo_github} />
-    </button>
+    <a href="https://github.com/radenmasabdul" target="_blank">
+      <button className="">
+        <img src={Logo_github} />
+      </button>
+    </a>
   );
 }
 
 function ButtonLinkedIn() {
   return (
-    <button className="">
-      <img src={Logo_linked} />
-    </button>
+    <a href="https://www.linkedin.com/in/abdulrahmanalhafizh" target="_blank">
+      <button className="">
+        <img src={Logo_linked} />
+      </button>
+    </a>
   );
 }
 
 function ButtonTiktok() {
   return (
-    <button className="">
-      <img src={Logo_tiktok} />
-    </button>
+    <a href="https://www.tiktok.com/@radenmasabdul_" target="_blank">
+      <button className="">
+        <img src={Logo_tiktok} />
+      </button>
+    </a>
   );
 }
 
 function ButtonTwitter() {
   return (
-    <button className="">
-      <img src={Logo_twitter} />
-    </button>
+    <a href="https://www.twitter.com/radenmasabdul_" target="_blank">
+      <button className="">
+        <img src={Logo_twitter} />
+      </button>
+    </a>
   );
 }
 
