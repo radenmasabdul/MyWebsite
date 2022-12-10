@@ -27,52 +27,13 @@ function Cards() {
   );
 }
 
-function CardsFigma() {
+function CardsServices({ src, title, desc }) {
   return (
     <div className="card w-full bg-bg-card rounded-md">
       <div className="card-body">
-        <img src={Figma} alt="figma" className="w-14 h-14" />
-        <h2 className="font-bold text-xl text-white py-4">Figma</h2>
-        <p className="font-bold text-xs text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores
-          iure rem error nulla esse facere tempore ut amet, magnam voluptatibus
-          saepe, neque assumenda cum doloribus. Pariatur laboriosam quos
-          doloremque.
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function CardsWebDevelopment() {
-  return (
-    <div className="card w-full bg-bg-card rounded-md">
-      <div className="card-body">
-        <img src={WebDev} alt="webdev" className="w-14 h-14" />
-        <h2 className="font-bold text-xl text-white py-4">Web Development</h2>
-        <p className="font-bold text-xs text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores
-          iure rem error nulla esse facere tempore ut amet, magnam voluptatibus
-          saepe, neque assumenda cum doloribus. Pariatur laboriosam quos
-          doloremque.
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function CardsCollaborations() {
-  return (
-    <div className="card w-full bg-bg-card rounded-md">
-      <div className="card-body">
-        <img src={Collab} alt="collab" className="w-14 h-14" />
-        <h2 className="font-bold text-xl text-white py-4">Collaborations</h2>
-        <p className="font-bold text-xs text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores
-          iure rem error nulla esse facere tempore ut amet, magnam voluptatibus
-          saepe, neque assumenda cum doloribus. Pariatur laboriosam quos
-          doloremque.
-        </p>
+        <img src={src} alt="figma" className="w-14 h-14" />
+        <h2 className="font-bold text-xl text-white py-4">{title}</h2>
+        <p className="font-bold text-xs text-white">{desc}</p>
       </div>
     </div>
   );
@@ -203,9 +164,7 @@ function CardsContact() {
 
 export {
   Cards,
-  CardsFigma,
-  CardsWebDevelopment,
-  CardsCollaborations,
+  CardsServices,
   CardsProjects,
   CardTeams,
   CardsCity,
