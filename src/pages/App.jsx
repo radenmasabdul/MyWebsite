@@ -24,6 +24,7 @@ import {
 import Footer from "../components/Footer";
 import { data } from "../data/myServices";
 import { datas } from "../data/myProjects";
+import { testi } from "../data/testimonials";
 
 function App() {
   return (
@@ -112,6 +113,7 @@ function App() {
               src={myProjects.img}
               title={myProjects.title}
               desc={myProjects.desc}
+              link={myProjects.link}
             />
           ))}
           ;
@@ -131,9 +133,16 @@ function App() {
 
       <main className="max-w-7xl mx-auto px-4 py-2 lg:py-6">
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <CardTeams />
-          <CardTeams />
-          <CardTeams />
+          {testi.map((testimonials) => (
+            <CardTeams
+              key={testimonials.id}
+              src={testimonials.img}
+              desc={testimonials.desc}
+              images={testimonials.images}
+              job_title={testimonials.job_title}
+              name={testimonials.name}
+            />
+          ))}
         </section>
       </main>
 

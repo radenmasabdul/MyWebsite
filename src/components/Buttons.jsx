@@ -15,7 +15,9 @@ function Buttons() {
 
 function ButtonsViewsAll() {
   return (
-    <button className="btn bg-bg-iconbtn rounded-lg ">Views All Works</button>
+    <a href="https://github.com/radenmasabdul" target="_blank">
+      <button className="btn bg-bg-iconbtn rounded-lg ">Views All Works</button>
+    </a>
   );
 }
 

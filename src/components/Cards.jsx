@@ -1,10 +1,5 @@
 import React from "react";
 import Pict from "../assets/my_pict.png";
-import Figma from "../assets/logo_figma.svg";
-import WebDev from "../assets/logo_react.svg";
-import Collab from "../assets/logo_collaboration.svg";
-import Quotes from "../assets/logo_quotes.svg";
-import Img from "../assets/img_anisa.svg";
 import City from "../assets/logo_map.svg";
 import Phone from "../assets/logo_telp.svg";
 import Mail from "../assets/logo_mail.svg";
@@ -39,7 +34,7 @@ function CardsServices({ src, title, desc }) {
   );
 }
 
-function CardsProjects({ src, title, desc }) {
+function CardsProjects({ src, title, desc, link }) {
   return (
     <div className="card w-full bg-bg-card rounded-md">
       <figure>
@@ -49,31 +44,32 @@ function CardsProjects({ src, title, desc }) {
         <h2 className="card-title text-xl text-white">{title}</h2>
         <p className="font-normal text-base text-white">{desc}</p>
         <div className="card-actions justify-end">
-          <button className="btn bg-bg-iconbtn rounded-lg">See More!</button>
+          <a href={link} target="_blank">
+            <button className="btn bg-bg-iconbtn rounded-lg">See More!</button>
+          </a>
         </div>
       </div>
     </div>
   );
 }
 
-function CardTeams() {
+function CardTeams({ src, desc, images, job_title, name }) {
   return (
     <div className="card w-full bg-bg-card rounded-md">
       <div className="card-body">
-        <img src={Quotes} alt="Quotes" className="w-14 h-14" />
-        <p className="font-bold text-xs text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores
-          iure rem error nulla esse facere tempore ut amet, magnam voluptatibus
-          saepe, neque assumenda cum doloribus. Pariatur laboriosam quos
-          doloremque.
-        </p>
+        <img src={src} alt="Quotes" className="w-14 h-14" />
+        <p className="font-bold text-xs text-white">{desc}</p>
         <div className="grid grid-rows-3 grid-flow-col gap-1 pt-2">
-          <img src={Img} alt="img" className="row-span-3" />
+          <img
+            src={images}
+            alt="img"
+            className="row-span-3 w-[60px] h-[60px] rounded-full"
+          />
           <p className="col-span-2 font-bold text-base text-white">
-            Frontend Developers
+            {job_title}
           </p>
           <p className="row-span-2 col-span-2 font-semibold text-base text-white">
-            Annisa Ramadani
+            {name}
           </p>
         </div>
       </div>
