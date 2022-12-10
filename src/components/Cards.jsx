@@ -1,9 +1,5 @@
 import React from "react";
 import Pict from "../assets/my_pict.png";
-import City from "../assets/logo_map.svg";
-import Phone from "../assets/logo_telp.svg";
-import Mail from "../assets/logo_mail.svg";
-
 import {
   Input,
   InputPhone,
@@ -11,7 +7,6 @@ import {
   InputSubject,
   TextArea,
 } from "../components/Input";
-
 import { ButtonsSendMessages } from "../components/Buttons";
 
 function Cards() {
@@ -38,7 +33,7 @@ function CardsProjects({ src, title, desc, link }) {
   return (
     <div className="card w-full bg-bg-card rounded-md">
       <figure>
-        <img src={src} alt="card" />
+        <img src={src} alt="card" className="w-full h-full" />
       </figure>
       <div className="card-body">
         <h2 className="card-title text-xl text-white">{title}</h2>
@@ -77,57 +72,23 @@ function CardTeams({ src, desc, images, job_title, name }) {
   );
 }
 
-function CardsCity() {
+function CardsInfo({ src, link, information }) {
   return (
-    <div className="card w-full bg-bg-card rounded-md">
-      <div className="card-body">
-        <a
-          href="https://www.google.com/maps/place/6%C2%B034'02.7%22S+106%C2%B047'17.6%22E/@-6.5680169,106.7885313,17z/data=!4m6!3m5!1s0x0:0xf620a0ae574fcdd8!7e2!8m2!3d-6.5674041!4d106.7882313"
-          target="_blank"
-        >
-          <figure className="place-content-center">
-            <img src={City} alt="city" className="w-9 h-9" />
-          </figure>
-          <p className="font-bold text-base text-white text-center">
-            Bogor City, West Java, Indonesia
-          </p>
-        </a>
+    <>
+      <div className="card w-full bg-bg-card rounded-md">
+        <div className="card-body">
+          <a href={link} target="_blank">
+            <figure className="place-content-center">
+              <img src={src} alt="city" className="w-9 h-9" />
+            </figure>
+            <p className="font-bold text-base text-white text-center">
+              {information}
+            </p>
+          </a>
+        </div>
       </div>
-    </div>
-  );
-}
-
-function CardsPhone() {
-  return (
-    <div className="card w-full bg-bg-card rounded-md">
-      <div className="card-body">
-        <a href="tel:+628988416727">
-          <figure className="place-content-center">
-            <img src={Phone} alt="phone" className="w-9 h-9" />
-          </figure>
-          <p className="font-bold text-base text-white text-center">
-            + 62 898-8416-727
-          </p>
-        </a>
-      </div>
-    </div>
-  );
-}
-
-function CardsMail() {
-  return (
-    <div className="card w-full bg-bg-card rounded-md">
-      <div className="card-body">
-        <a href="mailto:abdul.tamsis@gmail.com">
-          <figure className="place-content-center">
-            <img src={Mail} alt="mail" className="w-9 h-9" />
-          </figure>
-          <p className="font-bold text-base text-white text-center">
-            abdul.tamsis@gmail.com
-          </p>
-        </a>
-      </div>
-    </div>
+      <br />
+    </>
   );
 }
 
@@ -157,8 +118,6 @@ export {
   CardsServices,
   CardsProjects,
   CardTeams,
-  CardsCity,
-  CardsPhone,
-  CardsMail,
+  CardsInfo,
   CardsContact,
 };

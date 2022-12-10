@@ -1,15 +1,7 @@
 import React from "react";
 import Logo from "../assets/MyLogoFix.png";
-
-import {
-  ButtonFb,
-  ButtonIg,
-  ButtonGithub,
-  ButtonLinkedIn,
-  ButtonTiktok,
-  ButtonTwitter,
-  ButtonsViewsAll,
-} from "../components/Buttons";
+import { sosmed } from "../data/sosmed";
+import { ButtonSosmed } from "../components/Buttons";
 
 function Footer() {
   return (
@@ -19,12 +11,9 @@ function Footer() {
           <img src={Logo} alt="logo" className="w-full h-8" />
         </figure>
         <section className="flex space-x-4 py-4">
-          <ButtonFb />
-          <ButtonIg />
-          <ButtonGithub />
-          <ButtonLinkedIn />
-          <ButtonTiktok />
-          <ButtonTwitter />
+          {sosmed.map((sosmed) => (
+            <ButtonSosmed key={sosmed.id} img={sosmed.img} link={sosmed.link} />
+          ))}
         </section>
         <p className="text-white">ARA © 2022 - All right reserved</p>
       </div>

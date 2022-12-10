@@ -1,30 +1,22 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Profile from "../components/Profile";
 import {
   Cards,
   CardsServices,
   CardsProjects,
   CardTeams,
-  CardsCity,
-  CardsPhone,
-  CardsMail,
+  CardsInfo,
   CardsContact,
 } from "../components/Cards";
-
-import {
-  ButtonFb,
-  ButtonIg,
-  ButtonGithub,
-  ButtonLinkedIn,
-  ButtonTiktok,
-  ButtonTwitter,
-  ButtonsViewsAll,
-} from "../components/Buttons";
-
+import { ButtonSosmed, ButtonsViewsAll } from "../components/Buttons";
 import Footer from "../components/Footer";
 import { data } from "../data/myServices";
 import { datas } from "../data/myProjects";
 import { testi } from "../data/testimonials";
+import { sosmed } from "../data/sosmed";
+import { info } from "../data/info";
+import { profile } from "../data/profile";
 
 function App() {
   return (
@@ -37,32 +29,25 @@ function App() {
         id="home"
       >
         <article className="md:grid-col-span-2 p-4">
-          <p className="text-white font-bold text-[40px] ">Hi! Im </p>
-          <p className="text-white font-extrabold text-[40px]">
-            ABDUL RAHMAN{" "}
-            <span className="text-bg-iconbtn font-extrabold text-[40px]">
-              ALHAFIZH
-            </span>
-          </p>
-          <p className="text-white font-semibold text-2xl">
-            Frontend Developer
-          </p>
-          <p className="text-white font-normal text-base pr-0 mt-5 mb-9 lg:pr-64">
-            I have the ability to develop a website. For example, Figma for
-            design, HTML5 for markup, CSS3 for styling, Bootstrap, or Tailwind
-            CSS for frameworks to quickly build custom interfaces. In addition
-            to the programming language used in Javascript, I can also use the
-            Javascript library ReactJS to develop the website to make it more
-            dynamic.
-          </p>
+          {profile.map((profile) => (
+            <Profile
+              key={profile.id}
+              hi={profile.hi}
+              firstName={profile.firstName}
+              lastName={profile.lastName}
+              title={profile.title}
+              desc={profile.desc}
+            />
+          ))}
           <p className="text-white font-bold text-xl">FIND ME ON</p>
           <section className="grid grid-cols-12 md:grid-flow-col gap-1 mt-4">
-            <ButtonFb />
-            <ButtonIg />
-            <ButtonGithub />
-            <ButtonLinkedIn />
-            <ButtonTiktok />
-            <ButtonTwitter />
+            {sosmed.map((sosmed) => (
+              <ButtonSosmed
+                key={sosmed.id}
+                img={sosmed.img}
+                link={sosmed.link}
+              />
+            ))}
           </section>
         </article>
 
@@ -90,7 +75,6 @@ function App() {
               desc={myServices.desc}
             />
           ))}
-          ;
         </section>
       </main>
 
@@ -116,7 +100,6 @@ function App() {
               link={myProjects.link}
             />
           ))}
-          ;
         </section>
         <section className="max-w-7xl mx-auto md:grid-col-span-2 px-4 text-center py-4">
           <ButtonsViewsAll />
@@ -160,11 +143,14 @@ function App() {
       <main className="max-w-7xl mx-auto grid md:grid-flow-col gap-4">
         <article className="md:grid-col-span-2 p-4">
           <div className="">
-            <CardsCity />
-            <br />
-            <CardsPhone />
-            <br />
-            <CardsMail />
+            {info.map((info) => (
+              <CardsInfo
+                key={info.id}
+                src={info.img}
+                link={info.link}
+                information={info.information}
+              />
+            ))}
           </div>
         </article>
 

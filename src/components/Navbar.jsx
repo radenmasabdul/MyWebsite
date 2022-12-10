@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/MyLogoFix.png";
-import { Buttons } from "./Buttons";
+import { Buttons } from "../components/Buttons";
 
 function Navbar() {
   return (
