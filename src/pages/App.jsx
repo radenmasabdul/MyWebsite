@@ -23,6 +23,7 @@ import {
 
 import Footer from "../components/Footer";
 import { data } from "../data/myServices";
+import { datas } from "../data/myProjects";
 
 function App() {
   return (
@@ -88,6 +89,7 @@ function App() {
               desc={myServices.desc}
             />
           ))}
+          ;
         </section>
       </main>
 
@@ -104,9 +106,15 @@ function App() {
 
       <main className="max-w-7xl mx-auto px-4 py-2 lg:py-6">
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <CardsProjects />
-          <CardsProjects />
-          <CardsProjects />
+          {datas.map((myProjects) => (
+            <CardsProjects
+              key={myProjects.id}
+              src={myProjects.img}
+              title={myProjects.title}
+              desc={myProjects.desc}
+            />
+          ))}
+          ;
         </section>
         <section className="max-w-7xl mx-auto md:grid-col-span-2 px-4 text-center py-4">
           <ButtonsViewsAll />

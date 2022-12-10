@@ -39,23 +39,17 @@ function CardsServices({ src, title, desc }) {
   );
 }
 
-function CardsProjects() {
+function CardsProjects({ src, title, desc }) {
   return (
     <div className="card w-full bg-bg-card rounded-md">
       <figure>
-        <img src="https://placeimg.com/400/225/arch" alt="car!" />
+        <img src={src} alt="card" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-xl text-white">GunTour App</h2>
-        <p className="font-normal text-base text-white">
-          This is a website created to make it easier for climbers everywhere to
-          order tickets and climbing items that they want to rent, especially on
-          Mount Gede Pangrango. And this project was built using ReactJS for the
-          Javascript library, Figma for UI design, Tailwind CSS for building
-          custom interfaces, and DaisyUi for the Tailwind CSS component library
-        </p>
+        <h2 className="card-title text-xl text-white">{title}</h2>
+        <p className="font-normal text-base text-white">{desc}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">See More!</button>
+          <button className="btn bg-bg-iconbtn rounded-lg">See More!</button>
         </div>
       </div>
     </div>
