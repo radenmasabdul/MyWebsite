@@ -24,10 +24,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_wssu7ts",
-        "template_drcf8p4",
+        import.meta.env.VITE_YOUR_SERVICE_ID,
+        import.meta.env.VITE_YOUR_TEMPLATE_ID,
         form.current,
-        "xyVkW87jL137Zp1Pm"
+        import.meta.env.VITE_YOUR_PUBLIC_KEY
       )
       .then(
         (result) => {
