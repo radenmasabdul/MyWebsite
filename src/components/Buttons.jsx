@@ -16,7 +16,9 @@ function ButtonsViewsAll() {
 
 function ButtonsSendMessages() {
   return (
-    <button className="btn bg-bg-iconbtn rounded-lg ">Send Messages</button>
+    <button className="btn bg-bg-iconbtn rounded-lg" type="submit">
+      Send Messages
+    </button>
   );
 }
 

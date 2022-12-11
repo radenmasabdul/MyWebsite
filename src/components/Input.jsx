@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Input() {
   return (
@@ -6,6 +6,8 @@ function Input() {
       type="text"
       placeholder="Enter Your Name"
       className="input w-full max-w-xs bg-bg-input text-white mt-4"
+      name="user_name"
+      required
     />
   );
 }
@@ -13,9 +15,12 @@ function Input() {
 function InputPhone() {
   return (
     <input
-      type="text"
+      type="tel"
+      maxLength="15"
       placeholder="Enter Your Phone Number"
       className="input w-full max-w-xs bg-bg-input text-white"
+      name="user_phone"
+      required
     />
   );
 }
@@ -26,6 +31,8 @@ function InputEmail() {
       type="email"
       placeholder="Enter Your Email"
       className="input w-full max-w-xs bg-bg-input text-white"
+      name="user_email"
+      required
     />
   );
 }
@@ -36,6 +43,8 @@ function InputSubject() {
       type="text"
       placeholder="Enter Your Subject"
       className="input w-full max-w-xs bg-bg-input text-white"
+      name="user_subject"
+      required
     />
   );
 }
@@ -45,6 +54,8 @@ function TextArea() {
     <textarea
       className="textarea bg-bg-input w-full h-[117px] rounded resize-none text-white"
       placeholder="Type Your Messages"
+      name="messages"
+      required
     ></textarea>
   );
 }

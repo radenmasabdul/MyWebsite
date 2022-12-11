@@ -1,13 +1,5 @@
 import React from "react";
 import Pict from "../assets/my_pict.png";
-import {
-  Input,
-  InputPhone,
-  InputEmail,
-  InputSubject,
-  TextArea,
-} from "../components/Input";
-import { ButtonsSendMessages } from "../components/Buttons";
 
 function Cards() {
   return (
@@ -53,7 +45,7 @@ function CardTeams({ src, desc, images, job_title, name }) {
     <div className="card w-full bg-bg-card rounded-md">
       <div className="card-body">
         <img src={src} alt="Quotes" className="w-14 h-14" />
-        <p className="font-bold text-xs text-white">{desc}</p>
+        <p className="font-normal text-xs text-white">{desc}</p>
         <div className="grid grid-rows-3 grid-flow-col gap-1 pt-2">
           <img
             src={images}
@@ -92,32 +84,4 @@ function CardsInfo({ src, link, information }) {
   );
 }
 
-function CardsContact() {
-  return (
-    <div className="card w-full bg-bg-card rounded-md">
-      <div className="card-body space-y-4">
-        <div className="lg:grid grid-cols-2 gap-4 md:grid-flow-row space-y-4">
-          <Input />
-          <InputPhone />
-          <InputEmail />
-          <InputSubject />
-        </div>
-        <div className="lg:grid grid-cols-1 gap-2 md:grid-flow-row my-2">
-          <TextArea />
-        </div>
-        <div className="grid grid-cols-1">
-          <ButtonsSendMessages />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export {
-  Cards,
-  CardsServices,
-  CardsProjects,
-  CardTeams,
-  CardsInfo,
-  CardsContact,
-};
+export { Cards, CardsServices, CardsProjects, CardTeams, CardsInfo };

@@ -15,7 +15,7 @@ export const testi = [
     {
         id: 1,
         img: img_quotes,
-        desc: "Lorem ipsum dolor sit amet consectetur. Et orci gravida quam duis mauris tellus eget condimentum. Felis enim a in sed. Ornare quisque lacus velit odio risus faucibus aliquet. Sed egestas pulvinar sagittis gravida ultrices imperdiet donec eget. Neque consectetur varius quam habitant.",
+        desc: "I've worked alongside Abdul on a project before, and I was lucky to be on a team with him. He gave 100% percent effort to his responsibility and played a significant role in ensuring that our team completed our tasks on time. He's a skilled frontend developer, excellent at making reusable components and important functions. I learned a lot from Abdul. Not only he's a patient team member, he's also willing to lend a hand to anyone who needs it. I wholeheartedly recommend him to any company looking for a reliable new talent and I can't wait to see what he does with the next step in his career trajectory.",
         images: img_sofia,
         job_title: "Frontend Developer",
         name: "Rainisa Sofhia",
@@ -23,7 +23,7 @@ export const testi = [
     {
         id: 2,
         img: img_quotes,
-        desc: "Lorem ipsum dolor sit amet consectetur. Et orci gravida quam duis mauris tellus eget condimentum. Felis enim a in sed. Ornare quisque lacus velit odio risus faucibus aliquet. Sed egestas pulvinar sagittis gravida ultrices imperdiet donec eget. Neque consectetur varius quam habitant.",
+        desc: "Wow is all I can say! Abdul did an absolute  fenominal job from start to finish! He captured and created exactly what | wantedand exceeded my expectation.",
         images: img_riski,
         job_title: "Frontend Developer",
         name: "Rizki Haddi Prayoga",

@@ -7,10 +7,10 @@ import {
   CardsProjects,
   CardTeams,
   CardsInfo,
-  CardsContact,
 } from "../components/Cards";
-import { ButtonSosmed, ButtonsViewsAll } from "../components/Buttons";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
+import { ButtonSosmed, ButtonsViewsAll } from "../components/Buttons";
 import { data } from "../data/myServices";
 import { datas } from "../data/myProjects";
 import { testi } from "../data/testimonials";
@@ -156,7 +156,7 @@ function App() {
 
         <aside className="md:grid-col-span-1 p-4">
           <div className="">
-            <CardsContact />
+            <Contact />
           </div>
         </aside>
       </main>
