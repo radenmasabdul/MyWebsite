@@ -36,7 +36,7 @@ export const Contact = () => {
             icon: "success",
             title: "Message successfully sent",
             showConfirmButton: false,
-            timer: 2000,
+            timer: 1500,
           });
           e.target.reset();
         },
